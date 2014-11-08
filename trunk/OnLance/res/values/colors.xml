@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fundo">#f0f8e5</color>
+     <color name="branco">@android:color/white</color>
+</resources>
