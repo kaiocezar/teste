@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OnLance</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="pontosCorrido">Pontos Corrido</string>
+    <string name="campeonato">Campeonato</string>
+    <string name="amistoso">Amistoso</string>
+    <string name="quantJogadores">Quantidade de Jogadores</string>
+    <string name="tempo">Tempo</string>
+    <string name="gol">gol</string>
+    <string name="app_id">1538220866423022</string>
+    <string name="encerramentoPartida">Encerramento da Partida</string>
+
+</resources>
