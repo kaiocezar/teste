@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">OnLance</string>
+     <string name="app_name">ONLance</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="pontosCorrido">Pontos Corrido</string>
     <string name="campeonato">Campeonato</string>
+    <string name="configuracao">Configuracao</string>
+    <string name="copa">Copa</string>
+    <string name="selecao_times">Seleção de times</string>
+    <string name="porEquipe">Por equipe</string>
     <string name="amistoso">Amistoso</string>
     <string name="quantJogadores">Quantidade de Jogadores</string>
+    <string name="terminoPartida">O jogo termina quando</string>
     <string name="tempo">Tempo</string>
+    <string name="compartilharFacebook">Compartilhar com o facebook</string>
     <string name="gol">gol</string>
+    <string name="ou">Ou</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="esqueceu_senha">Esqueceu sua senha?</string>
+    <string name="faca_cadastro">Faça seu cadastro!</string>
+    <string name="nome_usuario">Nome de usuário</string>
+    <string name="entrar_face">Entrar com o Facebook</string>
     <string name="app_id">1538220866423022</string>
     <string name="encerramentoPartida">Encerramento da Partida</string>
 
