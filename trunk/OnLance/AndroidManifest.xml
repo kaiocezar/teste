@@ -26,6 +26,10 @@
         </activity>
         <activity android:name=".ConfigActivity" >
         </activity>
+        <activity android:name=".ModoJogoActivity" >
+        </activity>
+        <activity android:name=".TimesPartidaActivity" >
+        </activity>
         <activity android:name="com.facebook.LoginActivity" >
         </activity>
 

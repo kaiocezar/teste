@@ -23,9 +23,7 @@ public class MainActivity extends Activity {
         
     }
 
-
-
-    public void entrar(View view){
+    public void entrarFacebook(View view){
     	   // start Facebook Login
     	 Log.i("Script", "entrar");
         Session.openActiveSession(this, true, new Session.StatusCallback() {
@@ -54,9 +52,7 @@ public class MainActivity extends Activity {
     	
     	
     }
-    public void sair(View view){
-    	
-    }
+
     
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -64,12 +60,10 @@ public class MainActivity extends Activity {
         Session.getActiveSession().onActivityResult(this, requestCode, resultCode, data);
     }
     
-    public void configuracao(View view){
-    	Intent intent =  new Intent(this, ConfigActivity.class);
+    public void proximaTela(View view){
+    	Intent intent =  new Intent(this, ModoJogoActivity.class);
     	
     	startActivity(intent);
-    	
-    	
     }
 
 }

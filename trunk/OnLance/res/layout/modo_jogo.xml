@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_amistoso"
+        style="@style/modoFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:onClick="proximaTela"
+        android:text="@string/amistoso"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button_copa"
+        style="@style/modoFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1.5dp"
+        android:layout_marginTop="1.5dp"
+        android:layout_weight="0.33"
+        android:onClick="proximaTela"
+        android:text="@string/copa"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button_pontosCorridos"
+        style="@style/modoFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:onClick="proximaTela"
+        android:text="@string/pontosCorrido"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
