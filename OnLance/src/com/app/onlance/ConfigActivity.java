@@ -1,7 +1,9 @@
 package com.app.onlance;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -18,7 +20,7 @@ public class ConfigActivity extends Activity{
 	  @Override
 	    protected void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
-	        setContentView(R.layout.config);
+	        setContentView(R.layout.configuracoes_partidas);
 	        
 	        ArrayAdapter<String> adapterJog = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item,quantJogadores);
 	        ArrayAdapter<String> adapterGols = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item,quantGols);
@@ -33,4 +35,16 @@ public class ConfigActivity extends Activity{
 	        spinnerQuantJog.setAdapter(adapterJog);
 	        
 	    }
+	  
+	  
+	  
+	  
+	  public void prosseguir(View view){
+		  Intent intent =  new Intent(this, TimesPartidaActivity.class);
+	    	
+	    	startActivity(intent);
+		  
+		  
+	  }
 }
+
