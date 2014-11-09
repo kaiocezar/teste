@@ -2,4 +2,7 @@
 <resources>
     <color name="fundo">#f0f8e5</color>
      <color name="branco">@android:color/white</color>
+     <color name="amarelo">#FFFF00</color>
+     <color name="vermelho">#FF0000</color>
+     
 </resources>
