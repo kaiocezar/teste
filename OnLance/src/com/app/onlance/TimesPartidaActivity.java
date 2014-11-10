@@ -15,7 +15,7 @@ public class TimesPartidaActivity extends Activity {
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.times_partida);
+        setContentView(R.layout.selecao_times);
         
         List<String> jogadore = new ArrayList<String>();
         

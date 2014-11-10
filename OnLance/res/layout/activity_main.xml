@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:orientation="vertical" >
 
     <Button
@@ -34,8 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/nome_usuario"
-        android:inputType="textPersonName"
-        android:textColor="#FFFFFF" >
+        android:inputType="textPersonName" >
 
         <requestFocus />
     </EditText>
@@ -45,8 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/senha"
-        android:inputType="textPassword"
-        android:textColor="#FFFFFF" />
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/entrar"

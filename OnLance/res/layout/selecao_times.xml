@@ -21,15 +21,14 @@
             android:layout_margin="15dp"
             android:layout_weight="0.17"
             android:background="#CEDBDE"
-            android:orientation="vertical"
-            android:onClick="testeView" >
+            android:onClick="testeView"
+            android:orientation="vertical" >
 
             <ListView
                 android:id="@+id/listView1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
             </ListView>
-
         </LinearLayout>
 
         <RadioButton
@@ -50,19 +49,20 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-<RadioButton
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="-20dp" />
-        
+
         <LinearLayout
             android:layout_width="113dp"
             android:layout_height="140dp"
             android:layout_margin="15dp"
-            android:layout_weight="0.17"
             android:background="#CEDBDE"
             android:orientation="vertical" >
         </LinearLayout>
@@ -72,31 +72,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="-20dp" />
-        
+
         <LinearLayout
             android:layout_width="113dp"
             android:layout_height="match_parent"
             android:layout_margin="15dp"
-            android:layout_weight="0.15"
             android:background="#CEDBDE"
             android:orientation="vertical" >
         </LinearLayout>
     </LinearLayout>
-    
-      <ProgressBar
+
+    <ProgressBar
         android:id="@+id/progressBar1"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:progress="66" />
+        android:progress="99" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
         android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
         android:text="@string/selecao_times"
         android:textColor="#AAAAAA" />
-    
 
 </LinearLayout>
