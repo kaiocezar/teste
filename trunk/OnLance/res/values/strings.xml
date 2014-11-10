@@ -4,11 +4,12 @@
      <string name="app_name">ONLance</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="pontosCorrido">Pontos Corrido</string>
+    <string name="pontosCorrido">Pontos Corridos</string>
+    <string name="modo_jogo">Modo de Jogo</string>
     <string name="campeonato">Campeonato</string>
-    <string name="configuracao">Configuracao</string>
+    <string name="configuracao_partida">Configuração da Partida</string>
     <string name="copa">Copa</string>
-    <string name="selecao_times">Seleção de times</string>
+    <string name="selecao_times">Seleção de Times</string>
     <string name="porEquipe">Por equipe</string>
     <string name="amistoso">Amistoso</string>
     <string name="quantJogadores">Quantidade de Jogadores</string>

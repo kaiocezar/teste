@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:orientation="vertical" >
 
     <Button
@@ -9,31 +10,52 @@
         style="@style/modoFont"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
         android:layout_weight="0.33"
         android:onClick="proximaTela"
-        android:text="@string/amistoso"
-        android:textColor="#FFFFFF" />
+        android:shadowColor="#000000"
+        android:text="@string/amistoso" />
 
     <Button
         android:id="@+id/button_copa"
         style="@style/modoFont"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="1.5dp"
-        android:layout_marginTop="1.5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
         android:layout_weight="0.33"
         android:onClick="proximaTela"
-        android:text="@string/copa"
-        android:textColor="#FFFFFF" />
+        android:text="@string/copa" />
 
     <Button
         android:id="@+id/button_pontosCorridos"
         style="@style/modoFont"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         android:layout_weight="0.33"
         android:onClick="proximaTela"
-        android:text="@string/pontosCorrido"
-        android:textColor="#FFFFFF" />
+        android:text="@string/pontosCorrido" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="33" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/modo_jogo"
+        android:textColor="#AAAAAA" />
 
 </LinearLayout>

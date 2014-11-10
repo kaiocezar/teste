@@ -1,9 +1,10 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <style name="modoFont">
         <item name="android:background">#388E3C</item>
         <item name="android:textSize">25sp</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
     </style>
 
     <!--
