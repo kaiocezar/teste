@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-     <string name="app_name">ONLance</string>
+    <string name="app_name">ONLance</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="pontosCorrido">Pontos Corridos</string>
@@ -10,14 +10,22 @@
     <string name="configuracao_partida">Configuração da Partida</string>
     <string name="copa">Copa</string>
     <string name="selecao_times">Seleção de Times</string>
-    <string name="porEquipe">Por equipe</string>
+    <string name="por_equipe">Por Equipe</string>
+    <string name="por_equipe_hint">Não esqueça, goleiro também é um jogador!</string>
     <string name="amistoso">Amistoso</string>
     <string name="quantJogadores">Quantidade de Jogadores</string>
+    <string name="quantJogadores_UPPER">QUANTIDADE DE JOGADORES</string>
     <string name="terminoPartida">O jogo termina quando</string>
+    <string name="terminoPartida_UPPER">COMO O JOGO TERMINA?</string>
     <string name="tempo">Tempo</string>
-    <string name="compartilharFacebook">Compartilhar com o facebook</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebook_hint">Compartilhe sua diversão com seus amigos!</string>
     <string name="gol">gol</string>
-    <string name="ou">Ou</string>
+    <string name="ou">ou</string>
+    <string name="por_gol">Por Gol</string>
+    <string name="por_gol_hint">Vence quem fizer o(s) gol(s) primeiro!</string>
+    <string name="por_tempo">Por Tempo</string>
+    <string name="por_tempo_hint">Escolha o tempo máximo em minutos!</string>
     <string name="senha">Senha</string>
     <string name="entrar">Entrar</string>
     <string name="esqueceu_senha">Esqueceu sua senha?</string>
@@ -26,5 +34,6 @@
     <string name="entrar_face">Entrar com o Facebook</string>
     <string name="app_id">1538220866423022</string>
     <string name="encerramentoPartida">Encerramento da Partida</string>
+    <string name="compartilhamento_UPPER">COMPARTILHAMENTO</string>
 
 </resources>

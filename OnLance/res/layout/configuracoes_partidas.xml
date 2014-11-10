@@ -1,125 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:orientation="vertical" >
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
-        android:text="@string/quantJogadores"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:layout_marginTop="20dp"
+        android:text="@string/quantJogadores_UPPER"
+        android:textColor="#9E9E9E"
+        android:textSize="18sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/porEquipe" />
-
-        <Spinner
-            android:id="@+id/quantJogSpnieer"
-            android:layout_width="132dp"
-            android:layout_height="32dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="40dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:layout_weight="1" >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/terminoPartida"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:orientation="horizontal" >
-
-            <CheckBox
-                android:id="@+id/checkBoxGol"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/gol" />
-
-            <Spinner
-                android:id="@+id/quantGolSpnieer"
-                android:layout_width="132dp"
-                android:layout_height="32dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:orientation="horizontal" >
-
-            <CheckBox
-                android:id="@+id/checkBoxTempo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tempo" />
-
-            <Spinner
-                android:id="@+id/quantTempoSpnieer"
-                android:layout_width="132dp"
-                android:layout_height="32dp" />
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:gravity="center"
-            android:text="@string/compartilharFacebook"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <Switch
-            android:id="@+id/switch1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/circle"
-            android:gravity="center_vertical|center_horizontal"
-            android:onClick="prosseguir"
-            android:text="V"
-            android:textColor="#fff" />
-    </LinearLayout>
-
-    <ProgressBar
-        android:id="@+id/progressBar1"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:progress="66" />
+    <View
+        android:id="@+id/firstDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/textView2"
+        android:background="#9E9E9E" />
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
-        android:text="@string/configuracao_partida"
-        android:textColor="#AAAAAA" />
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/firstDivider"
+        android:layout_marginTop="10dp"
+        android:text="@string/por_equipe"
+        android:textSize="18sp" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/hint1"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="@string/por_equipe_hint"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/quantJogSpnieer"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/firstDivider"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/termino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hint1"
+        android:layout_marginTop="20dp"
+        android:text="@string/terminoPartida_UPPER"
+        android:textColor="#9E9E9E"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/secondDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/termino"
+        android:background="#9E9E9E" />
+
+    <CheckBox
+        android:id="@+id/checkBoxGol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/secondDivider"
+        android:layout_marginTop="10dp"
+        android:text="@string/por_gol" />
+
+    <TextView
+        android:id="@+id/hint2"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBoxGol"
+        android:text="@string/por_gol_hint"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/quantGolSpnieer"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/secondDivider" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hint2"
+        android:layout_marginTop="15dp"
+        android:text="@string/por_tempo" />
+
+    <TextView
+        android:id="@+id/hint3"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBoxTempo"
+        android:text="@string/por_tempo_hint"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/quantTempoSpnieer"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/quantGolSpnieer" />
+
+    <TextView
+        android:id="@+id/outraConfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hint3"
+        android:layout_marginTop="20dp"
+        android:text="@string/compartilhamento_UPPER"
+        android:textColor="#9E9E9E"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/thirdDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/outraConfig"
+        android:background="#9E9E9E" />
+
+    <TextView
+        android:id="@+id/textFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/thirdDivider"
+        android:layout_marginTop="10dp"
+        android:text="@string/facebook" />
+
+    <TextView
+        android:id="@+id/hint4"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textFacebook"
+        android:text="@string/facebook_hint"
+        android:textSize="14sp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/thirdDivider"
+        android:layout_marginTop="12dp"
+        android:background="#F5F5F5"
+        android:checked="true"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/prosseguir"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/hint4"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:text="@string/entrar"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
