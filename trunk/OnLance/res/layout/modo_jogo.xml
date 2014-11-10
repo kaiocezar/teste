@@ -16,7 +16,7 @@
         android:layout_weight="0.33"
         android:onClick="proximaTela"
         android:shadowColor="#000000"
-        android:text="@string/amistoso" />
+        android:text="@string/amistoso_UPPER" />
 
     <Button
         android:id="@+id/button_copa"
@@ -29,7 +29,7 @@
         android:layout_marginTop="2dp"
         android:layout_weight="0.33"
         android:onClick="proximaTela"
-        android:text="@string/copa" />
+        android:text="@string/copa_UPPER" />
 
     <Button
         android:id="@+id/button_pontosCorridos"
@@ -41,6 +41,6 @@
         android:layout_marginRight="5dp"
         android:layout_weight="0.33"
         android:onClick="proximaTela"
-        android:text="@string/pontosCorrido" />
+        android:text="@string/pontosCorrido_UPPER" />
 
 </LinearLayout>

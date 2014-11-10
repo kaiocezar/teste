@@ -177,7 +177,7 @@
         android:layout_marginTop="15dp"
         android:background="#4CAF50"
         android:gravity="center"
-        android:text="@string/prosseguir"
+        android:text="@string/prosseguir_UPPER"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="20sp"
