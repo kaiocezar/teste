@@ -54,7 +54,7 @@
         android:layout_marginTop="5dp"
         android:background="#4CAF50"
         android:onClick="proximaTela"
-        android:text="@string/entrar"
+        android:text="@string/entrar_UPPER"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="20sp"
