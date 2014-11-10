@@ -35,5 +35,6 @@
     <string name="app_id">1538220866423022</string>
     <string name="encerramentoPartida">Encerramento da Partida</string>
     <string name="compartilhamento_UPPER">COMPARTILHAMENTO</string>
+    <string name="prosseguir">Prosseguir</string>
 
 </resources>
