@@ -19,6 +19,18 @@
             android:text="0"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="40sp" />
+        
+        <AbsoluteLayout 
+              android:layout_marginLeft="50dp"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:onClick="start"
+            android:text="        " />
 
         <Chronometer
             android:id="@+id/chronometer1"
@@ -27,12 +39,13 @@
             android:layout_marginLeft="60dp"
             android:layout_marginTop="10dp"
             android:textSize="40sp" />
+        </AbsoluteLayout>
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginLeft="60dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"
             android:background="#80AAAAAA"
             android:gravity="center"
@@ -48,14 +61,14 @@
     
 
     <ListView
-        android:id="@+id/listView1"
+        android:id="@+id/time1"
         android:layout_width="0dp"
         android:layout_height="300dp"
           android:layout_weight="0.5" >
     </ListView>
 
     <ListView
-        android:id="@+id/listView2"
+        android:id="@+id/time2"
         android:layout_width="0dp"
         android:layout_height="300dp"
           android:layout_weight="0.5" >
