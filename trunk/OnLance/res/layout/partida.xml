@@ -1,116 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <Chronometer
+        android:id="@+id/chronometer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView02"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/TextView02"
+        android:layout_centerHorizontal="true"
+        android:background="#00FFFFFF"
+        android:onClick="start" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="45sp" />
+
+    <View
+        android:id="@+id/firstDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/TextView02"
+        android:layout_marginTop="10dp"
+        android:background="#9E9E9E" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="45sp" />
 
     <LinearLayout
+        android:id="@+id/times"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/firstDivider"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
         android:orientation="horizontal" >
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_margin="10dp"
-            android:background="#80AAAAAA"
-            android:gravity="center"
-            android:text="0"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="40sp" />
-        
-        <AbsoluteLayout 
-              android:layout_marginLeft="50dp"
-             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
-            android:onClick="start"
-            android:text="        " />
+        <ListView
+            android:id="@+id/time1"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_weight="0.5"
+            android:background="#FAFAFA" >
+        </ListView>
 
-        <Chronometer
-            android:id="@+id/chronometer1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="10dp"
-            android:textSize="40sp" />
-        </AbsoluteLayout>
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
-            android:background="#80AAAAAA"
-            android:gravity="center"
-            android:text="0"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="40sp" />
+        <ListView
+            android:id="@+id/time2"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_weight="0.5"
+            android:background="#FAFAFA" >
+        </ListView>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-    
+    <View
+        android:id="@+id/secondDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/times"
+        android:layout_marginTop="10dp"
+        android:background="#9E9E9E" />
 
-    <ListView
-        android:id="@+id/time1"
-        android:layout_width="0dp"
-        android:layout_height="300dp"
-          android:layout_weight="0.5" >
-    </ListView>
+    <Button
+        android:id="@+id/cartaoAmarelo"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/secondDivider"
+        android:layout_marginTop="15dp"
+        android:background="@color/amarelo" />
 
-    <ListView
-        android:id="@+id/time2"
-        android:layout_width="0dp"
-        android:layout_height="300dp"
-          android:layout_weight="0.5" >
-    </ListView>
-    
-    </LinearLayout>
+    <Button
+        android:id="@+id/gol"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/secondDivider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/gol"
+        android:text="Gol"
+        android:textColor="@android:color/black" />
 
-     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:background="#80AAAAAA" >
+    <Button
+        android:id="@+id/cartaoVermelho"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/secondDivider"
+        android:layout_marginTop="15dp"
+        android:background="@color/vermelho" />
 
-         <Button
-             android:id="@+id/cartaoAmarelo"
-             android:layout_width="50dp"
-             android:layout_height="60dp"
-             android:layout_marginTop="10dp"
-             android:layout_marginLeft="30dp"
-             android:background="@color/amarelo" />
-         
-           <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/gol"
-            android:layout_marginLeft="55dp"
-            android:layout_marginTop="10dp"
-            android:gravity="center_vertical|center_horizontal"
-            android:text="Gol"
-            android:textColor="@android:color/black"
-           />
-         
-          <Button
-             android:id="@+id/cartaoVermelho"
-             android:layout_width="50dp"
-             android:layout_height="60dp"
-             android:layout_marginTop="10dp"
-             android:layout_marginLeft="60dp"
-             android:background="@color/vermelho" />
-          
-          
-         
-     </LinearLayout>
-    
-</LinearLayout>
+    <View
+        android:id="@+id/thirdDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/gol"
+        android:layout_marginTop="10dp"
+        android:background="#9E9E9E" />
+
+</RelativeLayout>

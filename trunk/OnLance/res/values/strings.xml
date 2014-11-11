@@ -19,7 +19,7 @@
     <string name="quantJogadores">Quantidade de Jogadores</string>
     <string name="quantJogadores_UPPER">QUANTIDADE DE JOGADORES</string>
     <string name="terminoPartida">O jogo termina quando</string>
-    <string name="terminoPartida_UPPER">COMO O JOGO TERMINA?</string>
+    <string name="terminoPartida_UPPER">QUANDO O JOGO TERMINA?</string>
     <string name="tempo">Tempo</string>
     <string name="facebook">Facebook</string>
     <string name="facebook_hint">Compartilhe sua diversão com seus amigos!</string>
