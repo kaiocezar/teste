@@ -23,7 +23,8 @@
     <string name="tempo">Tempo</string>
     <string name="facebook">Facebook</string>
     <string name="facebook_hint">Compartilhe sua diversão com seus amigos!</string>
-    <string name="gol">gol</string>
+    <string name="gol">GOL</string>
+    <string name="placar_0">0</string>
     <string name="ou">ou</string>
     <string name="por_gol">Por Gol</string>
     <string name="por_gol_hint">Vence quem fizer o(s) gol(s) primeiro!</string>
