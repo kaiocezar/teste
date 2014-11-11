@@ -11,7 +11,7 @@
         android:layout_height="75dp"
         android:layout_marginTop="50dp"
         android:background="#415E9B"
-        android:onClick="nextScreen"
+        android:onClick="proximaTela"
         android:text="@string/entrar_face"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
