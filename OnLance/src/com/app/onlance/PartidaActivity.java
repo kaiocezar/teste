@@ -14,9 +14,11 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class PartidaActivity extends Activity {
-
+	private static final String limite = "00:20";
+	
 	Chronometer cronometro;
-	boolean teste = true;
+	private long milliseconds;
+	private boolean isStart;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,9 @@ public class PartidaActivity extends Activity {
 		List<String> jogadores1 = new ArrayList<String>();
 		List<String> jogadores2 = new ArrayList<String>();
 
+		milliseconds = 0;
+		isStart = true;
+		
 		jogadores1.add("Geyson");
 		jogadores1.add("Kaio");
 		jogadores1.add("Zé Carlos");
@@ -52,14 +57,13 @@ public class PartidaActivity extends Activity {
 					@Override
 					public void onChronometerTick(Chronometer arg0) {
 
-						String limite = "00:20";
-
 						String valorCronometro = arg0.getText().toString();
 						if (valorCronometro.equals(limite)) {
 							Toast.makeText(PartidaActivity.this, "fim",
 									Toast.LENGTH_LONG).show();
 							cronometro.stop();
-
+							milliseconds = 0;
+							isStart = true;
 						}
 					}
 				});
@@ -67,16 +71,15 @@ public class PartidaActivity extends Activity {
 	}
 
 	public void start(View view) {
-		cronometro.setBase(SystemClock.elapsedRealtime());
-		cronometro.start();
-		if (teste) {
-			Toast.makeText(this, String.valueOf(cronometro.getBase()),
-					Toast.LENGTH_LONG).show();
-			teste = false;
-		} else {
-			Toast.makeText(this, cronometro.getText(), Toast.LENGTH_LONG)
-					.show();
-			teste = true;
+		if(isStart){
+			cronometro.setBase(SystemClock.elapsedRealtime() - milliseconds);
+			cronometro.start();
+			isStart = false;
+		}else{
+			 milliseconds = SystemClock.elapsedRealtime() -cronometro.getBase();
+			 cronometro.stop();
+			 isStart = true;
 		}
 	}
+	
 }
