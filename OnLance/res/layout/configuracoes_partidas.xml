@@ -5,7 +5,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:orientation="vertical" >
 
@@ -178,10 +178,9 @@
             android:id="@+id/prosseguir"
             android:layout_width="match_parent"
             android:layout_height="75dp"
-            android:layout_marginTop="15dp"
             android:layout_weight="0.1"
+            android:layout_marginTop="15dp"
             android:background="#4CAF50"
-            android:gravity="center"
             android:onClick="prosseguir"
             android:text="@string/prosseguir_UPPER"
             android:textColor="#FFFFFF"
