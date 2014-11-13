@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <ListView
+            android:id="@+id/jogadores"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:background="#FAFAFA" >
+        </ListView>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/jogadores"
+            android:background="#4CAF50"
+            android:text="@string/plus"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="0.1"
+        android:background="#4CAF50"
+        android:text="@string/prosseguir_UPPER"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
