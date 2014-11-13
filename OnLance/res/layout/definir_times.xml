@@ -9,7 +9,8 @@
         android:layout_height="match_parent"
         android:layout_weight="0.9"
         android:paddingLeft="16dp"
-        android:paddingRight="16dp" >
+        android:paddingRight="16dp"
+        android:layout_marginTop="20dp" >
 
         <ListView
             android:id="@+id/jogadores"
@@ -23,7 +24,7 @@
             android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/jogadores"
-            android:background="#4CAF50"
+            android:background="@drawable/circle"
             android:text="@string/plus"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
