@@ -41,6 +41,8 @@
     <string name="encerramentoPartida">Encerramento da Partida</string>
     <string name="compartilhamento_UPPER">COMPARTILHAMENTO</string>
     <string name="prosseguir">Prosseguir</string>
-    <string name="prosseguir_UPPER">PROSSEGUIR</string>
+    <string name="time_fragment">Times</string><string name="jogador_fragment">Jogadores</string><string name="prosseguir_UPPER">PROSSEGUIR</string>
+    
+    
 
 </resources>

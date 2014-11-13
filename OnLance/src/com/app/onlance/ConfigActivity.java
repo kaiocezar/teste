@@ -41,7 +41,7 @@ public class ConfigActivity extends Activity {
 	}
 
 	public void prosseguir(View view) {
-		Intent intent = new Intent(this, PartidaActivity.class);
+		Intent intent = new Intent(this, TimesPartidaActivity.class);
 
 		startActivity(intent);
 
