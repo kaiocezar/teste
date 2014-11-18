@@ -1,8 +1,16 @@
 package com.app.onlance;
 
-public class JogadorForList {
+import java.io.Serializable;
+
+public class JogadorForList implements Serializable {
 
 	private String nome;
+	private String tipoTela;
+
+	public JogadorForList(){
+		
+	}
+	
 	public String getNome() {
 		return nome;
 	}
@@ -15,6 +23,5 @@ public class JogadorForList {
 	public void setTipoTela(String tipoTela) {
 		this.tipoTela = tipoTela;
 	}
-	private String tipoTela;
 	
 }

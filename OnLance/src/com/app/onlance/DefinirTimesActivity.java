@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -61,8 +62,16 @@ public class DefinirTimesActivity extends Activity {
 			}
 		});
 		
-		
-		
-
 	}
+	
+	
+	public void prosseguir(View view){
+
+			Intent intent = new Intent(this, PartidaActivity.class);
+
+			startActivity(intent);
+
+		
+	}
+	
 }
