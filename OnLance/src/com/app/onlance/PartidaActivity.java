@@ -3,6 +3,12 @@ package com.app.onlance;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.facebook.HttpMethod;
+import com.facebook.Request;
+import com.facebook.Response;
+import com.facebook.Session;
+
+import Utils.UtilsMetodos;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -107,6 +113,8 @@ public class PartidaActivity extends Activity {
 					gol++;
 					placar1.setText(gol.toString());
 					modificarGol();
+					
+					shareContent(jogadores1.get(arg2));
 				}
 				
 			}
@@ -123,6 +131,7 @@ public class PartidaActivity extends Activity {
 					gol++;
 					placar2.setText(gol.toString());
 					modificarGol();
+					shareContent(jogadores2.get(arg2));
 				}
 				
 			}
@@ -159,4 +168,34 @@ public class PartidaActivity extends Activity {
 		}
 	}
 	
+	
+	public void shareContent(String nome){
+		if(UtilsMetodos.getInscace().isConectado() && UtilsMetodos.getInscace().validarUsuario(this)){
+
+			Session session = Session.getActiveSession();
+			Bundle paramns = new Bundle();
+			paramns.putString("name", "Gollllll");
+			paramns.putString("caption", "Baixe agora o OnLance");
+			paramns.putString("description", "Numa jogada ensaiada "+ nome+ "faz um gol maginifico");
+			paramns.putString("link", "http://google.com.br");
+			paramns.putString("picture", "http://www.informatoz.com/imagens/ico_cobertura/bola.png");
+
+
+			Request.Callback call = new Request.Callback() {
+
+				@Override
+				public void onCompleted(Response response) {
+					if(response.getError() == null){
+						Toast.makeText(PartidaActivity.this, "Sucesso", Toast.LENGTH_LONG).show();
+					}else{
+						Toast.makeText(PartidaActivity.this, "Falha", Toast.LENGTH_LONG).show();
+					}
+				}
+			};
+
+			Request re = new Request(session,"/me/feed",paramns,HttpMethod.POST,call);
+			re.executeAsync();
+		}
+
+	}
 }
