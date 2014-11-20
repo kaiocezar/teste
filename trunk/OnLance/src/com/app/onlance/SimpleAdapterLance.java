@@ -28,6 +28,8 @@ public class SimpleAdapterLance extends SimpleAdapter{
 
 				convertView.setBackgroundColor(Color.RED);
 				tipoTela.setText("1");
+            
+            
 
 			} else if (tipoTela.getText().toString().equals("1")) {
 				convertView.setBackgroundColor(Color.BLUE);
