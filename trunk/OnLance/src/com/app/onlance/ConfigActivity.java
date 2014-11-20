@@ -1,5 +1,6 @@
 package com.app.onlance;
 
+import Utils.UtilsConstants;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,6 +24,12 @@ public class ConfigActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.configuracoes_partidas);
 		
+		init();
+
+	}
+
+	private void init() {
+		
 		ArrayAdapter<String> adapterJog = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_dropdown_item, quantJogadores);
 		ArrayAdapter<String> adapterGols = new ArrayAdapter<String>(this,
@@ -37,12 +44,19 @@ public class ConfigActivity extends Activity {
 		spinnerQuantGols.setAdapter(adapterGols);
 		spinnerQuantTemp.setAdapter(adapterTemp);
 		spinnerQuantJog.setAdapter(adapterJog);
-
 	}
 
 	public void prosseguir(View view) {
 		Intent intent = new Intent(this, DefinirTimesActivity.class);
-
+		
+		Bundle paramns = new Bundle();
+		
+		paramns.putString(UtilsConstants.QUANT_GOLS, spinnerQuantGols.getSelectedItem().toString());
+		paramns.putString(UtilsConstants.QUANT_JOGADORES, spinnerQuantJog.getSelectedItem().toString());
+		paramns.putString(UtilsConstants.TEMPO_PARTIDA, spinnerQuantTemp.getSelectedItem().toString());
+		
+		
+		intent.putExtras(paramns);
 		startActivity(intent);
 
 	}
